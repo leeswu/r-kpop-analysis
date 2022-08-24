@@ -1,3 +1,7 @@
+"""
+Writes the processed dataset into MongoDB Cloud atlas for API usage
+"""
+
 import pymongo
 import json
 import certifi

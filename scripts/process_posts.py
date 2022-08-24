@@ -1,3 +1,8 @@
+"""
+Takes the raw collections of all posts and organizes by which K-Pop groups are mentioned in the title.
+Also extracts important counts of certain attributes.
+"""
+
 import json
 from collections import Counter
 
@@ -18,17 +23,15 @@ def addData(group, group_data, post):
     group_data[group]["Stickied"].append(post["Stickied"])
     group_data[group]["Upvote Ratios"].append(post["Upvote Ratio"])
 
-
+# Import the complete set of posts
 with open("./posts/all_posts_complete.json") as f:
     all_posts = json.load(f)
 
-# with open("./test/small_posts_complete.json") as f:
-#     all_posts = json.load(f)
-
-
+# Import the list of all K-Pop musical groups
 with open("./processed/groups_updated.json") as f:
     groups = json.load(f)
 
+# Initialize the dict
 group_data = {group: 
     {
         "Name": group,
@@ -65,6 +68,7 @@ for title, data in all_posts.items():
             if group.casefold() in title:
                 addData(group, group_data, data)
 
+# Extract counts from raw data
 for group, data in group_data.items():
     data["Authors"] = Counter(data["Authors"])
     data["Distinguished"] = Counter(data["Distinguished"])
