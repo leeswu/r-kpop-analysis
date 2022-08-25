@@ -18,7 +18,7 @@ This repository focuses solely on the data gathering and cleaning portion of thi
 Using the raw collection of all posts from r/kpop, organizes counts and statistics (number of submissions, the upvote ratio for those submissions, etc.) for each K-Pop music group. This is done by checking if a group's name is mentioned in the title of a post.
 
 ### groups_updated.json
-A list of all K-Pop music groups, as taken from Wikipedia [here](https://en.wikipedia.org/wiki/Category:K-pop_music_groups)
+A list of all K-Pop music groups, as taken from Wikipedia [here](https://en.wikipedia.org/wiki/Category:K-pop_music_groups).
 
 ## 📁 Raw Data
 ### all_ids.json
@@ -28,12 +28,12 @@ A file containing the ids of every post downloaded. Serves as a backup in case p
 
 A dataset containing the key attributes (Score, Number of Comments, Upvote Ratio, etc.) of every post downloaded.
 
-(See test data/small_posts.json for a snippet of what this file looks like)
+_(See test data/small_posts.json for a snippet of what this file looks like)_
 
 ### all_posts_complete.json
 A more complete dataset that stores almost all attributes of every post downloaded.
 
-(See test data/small_posts_complete.json for a snippet of what this file looks like)
+_(See test data/small_posts_complete.json for a snippet of what this file looks like)_
 
 ## 📁 Scripts
 ### get_groups.py
