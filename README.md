@@ -1,12 +1,12 @@
 # r/kpop Analysis
 
-Gathering and processing post data taken from the subreddit r/kpop.
+Gathering and processing post data taken from the subreddit [r/kpop](https://www.reddit.com/r/kpop/).
 
 ## Overview
 
 In the K-Pop community, there is constant debate between fans about the popularity of their favorite groups. Which are more popular? Less? Who gets talked about the most? How are they perceived by the those in the community at large?
 
-This multi-part project attempts to answer some of these questions by organizing and analyzing data from one of the largest gathering places of the K-Pop community on the internet: the subreddit r/kpop.
+This multi-part project attempts to answer some of these questions by organizing and analyzing data from one of the largest gathering places of the K-Pop community on the internet: the subreddit r/kpop, home to over 1.7 million members.
 
 By downloading and parsing every post from the subreddit's inception to July 1st, 2022, certain trends in who K-Pop fans are talking about and how well it is being received begin to emerge. The end goal is then to take these trends and visualize them in a way that is interesting and easily accessible in an interactive web app.
 
@@ -18,7 +18,7 @@ This repository focuses solely on the data gathering and cleaning portion of thi
 Using the raw collection of all posts from r/kpop, organizes counts and statistics (number of submissions, the upvote ratio for those submissions, etc.) for each K-Pop music group. This is done by checking if a group's name is mentioned in the title of a post.
 
 ### groups_updated.json
-A list of all K-Pop music groups, as taken from Wikipedia here: https://en.wikipedia.org/wiki/Category:K-pop_music_groups
+A list of all K-Pop music groups, as taken from Wikipedia [here](https://en.wikipedia.org/wiki/Category:K-pop_music_groups)
 
 ## 📁 Raw Data
 ### all_ids.json
