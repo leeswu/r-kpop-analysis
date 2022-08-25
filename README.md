@@ -31,7 +31,6 @@ A dataset containing the key attributes (Score, Number of Comments, Upvote Ratio
 (See test data/small_posts.json for a snippet of what this file looks like)
 
 ### all_posts_complete.json
-(Note: Stored with Git LFS)
 A more complete dataset that stores almost all attributes of every post downloaded.
 
 (See test data/small_posts_complete.json for a snippet of what this file looks like)
