@@ -16,7 +16,7 @@ collection = db.groupData
 requesting = []
 
 
-with open(r"group_data.json") as f:
+with open(r"./processed_data/group_data_time.json") as f:
     data = json.load(f);
 
 
