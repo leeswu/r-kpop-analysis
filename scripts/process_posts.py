@@ -24,11 +24,11 @@ def addData(group, group_data, post):
     group_data[group]["Upvote Ratios"].append(post["Upvote Ratio"])
 
 # Import the complete set of posts
-with open("./posts/all_posts_complete.json") as f:
+with open("./raw_data/all_posts_complete.json") as f:
     all_posts = json.load(f)
 
 # Import the list of all K-Pop musical groups
-with open("./processed/groups_updated.json") as f:
+with open("./processed_data/groups_updated.json") as f:
     groups = json.load(f)
 
 # Initialize the dict
@@ -71,7 +71,7 @@ for title, data in all_posts.items():
 # Extract counts from raw data
 for group, data in group_data.items():
     data["Authors"] = Counter(data["Authors"])
-    data["Distinguished"] = Counter(data["Distinguished"])
+    data["Distinguished"] = Counter(data["Distinguished"])["moderator"]
     data["Edited"] = Counter(data["Edited"])[True]
     data["Link Flairs"] = Counter(data["Link Flairs"])
     data["Locked"] = Counter(data["Locked"])[True]
@@ -82,5 +82,5 @@ for group, data in group_data.items():
     data["Stickied"] = Counter(data["Stickied"])[True]
 
 
-with open('./processed/group_data_complete.json', 'w') as f:
+with open('./processed_data/group_data_complete.json', 'w') as f:
     json.dump(group_data, f, indent=2)
